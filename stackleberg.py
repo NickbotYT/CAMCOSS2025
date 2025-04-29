@@ -230,7 +230,7 @@ final_tx_data['R_Transaction'] = final_tx_data.index
 final_tx_data = final_tx_data[['Round', 'R_Transaction', 'gas', 'tip']]
 
 # Save to CSV and Excel
-final_tx_data.to_csv("auction_data/auction_transactions.csv", index=False)
-final_tx_data.to_excel("auction_data/auction_transactions.xlsx", index=False)
+final_tx_data.to_csv("auction_transactions.csv", index=False)
+final_tx_data.to_excel("auction_transactions.xlsx", index=False)
 
 print("\nAll transaction data saved to 'auction_data/' folder, now showing which round each transaction is from.")
